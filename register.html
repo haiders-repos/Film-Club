@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Register</title>
+  <style>
+
+     body{
+         margin:0;
+         padding:0;
+         line-height: 30px;
+         font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+         background: repeating-linear-gradient(90deg,rgb(20,10,10)5%,#c00000 50%, rgb(20,10,10) 100%);
+         color: white;
+        }
+
+    .form-box{
+        width:350px;
+        margin:auto;
+        margin-top:-20px;
+        padding:20px;
+    
+        }
+    h2{
+     text-align: center;
+        }
+
+    #first-name,#last-name,#new-password,#confirm-password{
+     margin-bottom:10px;
+     padding:10px;
+     }
+
+   
+    
+    [for="select-format"]{
+     margin-right:30px;
+        }
+
+    [for="genre"]{
+     margin-right:10px;
+        }
+
+    [for="male"]{
+        margin-right:110px;
+    }
+
+    [for="date-of-birth"]{
+        margin-right: 70px;
+    }
+
+    [for="select-format"]{
+        margin-right:46px;
+    }
+
+    [for="genre"]{
+        margin-right:53px;
+    }
+
+    .already-registered{
+        text-indent: 50px;   
+    }
+
+    #register{
+        padding:10px;
+        display: block;         
+        margin: 10px auto;
+    }
+
+    .white-text{
+            color:white;
+        }
+
+    .title-font{
+        font-family:monospace;
+    }
+
+
+
+
+
+
+ </style>
+</head>
+<body>
+
+<div class="form-box">
+    <h2 class="title-font">User Registration</h2>
+    <form action="#">
+
+       
+        <input type="text" id="first-name" placeholder="First Name" required>
+        <input type="text" id="last-name" placeholder="Last Name" required> 
+        <br/> 
+        <input type="password" id="new-password" placeholder=" Password" required> 
+        <input type="password" id="confirm-password" placeholder="Confirm Password"  required>
+        <br/>
+
+        <label for=""></label>
+        <label for="male">Male
+        <input type="radio" id="male" name="gender"></label>
+        <label for="female">Female
+        <input type="radio" id="female" name="gender"></label>
+        <br/>
+
+        <label for="date-of-birth">Date Of Birth:</label>
+        <input type="date" id="date-of-birth" name="date-of-birth">
+        <br/>
+
+        <label for="select-format">Favourite Format:</label>
+        <label for="Analog">Analog</label>
+        <input type="checkbox" id="Analog" name="select-format">
+        <label for="Digital">Digital</label>
+        <input type="checkbox" id="Digital" name="select-format">
+        <br/>
+
+        <label for="genre"> Favourite Genre:</label>
+        <select name="genre">
+            <option value="Action">Action</option>
+            <option value="Thriller">Thriller</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Sci Fi">Sci Fi</option>
+            <option value="Horror">Horror</option>
+            <option value="War">War</option>
+            <option value="Western">Western</option>
+            <option value="Musicals">Musicals</option>
+            <option value="Romance">Romance</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Crime">Crime</option>
+            <option value="Documentary">Documentary</option>
+        </select>
+
+        <br/>
+        <input type="button" id="register" value="Register">
+        
+    </form>
+
+  <p class="already-registered">Already Registered? <a href="login.html" class="white-text"><strong>Login Here.</strong></a></p>
+    </div>
+    
+</body>
+</html>
